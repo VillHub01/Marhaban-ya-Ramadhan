@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang Ramadhan 1446 H</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Parallax Section -->
+    <div class="parallax" id="parallax">
+        <div class="bg-layer"></div>
+        <div class="stars-layer" id="stars"></div>
+        <div class="mosque-layer" id="mosque"></div>
+        
+        <!-- Floating Lanterns -->
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <div class="crescent">🌙</div>
+            <h1>Selamat Datang Ramadhan</h1>
+            <div class="subtitle">1446 H</div>
+            <div class="date">Bulan Penuh Berkah & Ampunan</div>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Hari</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Jam</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Menit</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Detik</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Greeting Cards Section -->
+    <div class="cards-section">
+        <h2 class="section-title">Keistimewaan Ramadhan</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>Bulan Al-Qur'an</h3>
+                <p>Bulan diturunkannya Al-Qur'an sebagai petunjuk bagi umat manusia</p>
+                <button class="card-btn" onclick="showMessage('Al-Qur\'an adalah petunjuk dan rahmat bagi orang-orang yang beriman')">Baca Selengkapnya</button>
+            </div>
+            <div class="card">
+                <div class="card-icon">🤲</div>
+                <h3>Bulan Pengampunan</h3>
+                <p>Bulan dimana pintu ampunan dibuka seluas-luasnya</p>
+                <button class="card-btn" onclick="showMessage('Bulan Ramadhan adalah bulan penuh ampunan, perbanyak istighfar')">Baca Selengkapnya</button>
+            </div>
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>Bulan Berbagi</h3>
+                <p>Lipatgandakan pahala dengan bersedekah di bulan suci</p>
+                <button class="card-btn" onclick="showMessage('Sedekah di bulan Ramadhan dilipatgandakan pahalanya')">Baca Selengkapnya</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prayer Times Section -->
+    <div class="prayer-section">
+        <h2 class="section-title">Jadwal Sholat (Jakarta)</h2>
+        <div class="prayer-container">
+            <div class="prayer-item">
+                <span class="prayer-name">Imsak</span>
+                <span class="prayer-time" id="imsak">04:30</span>
+            </div>
+            <div class="prayer-item">
+                <span class="prayer-name">Subuh</span>
+                <span class="prayer-time" id="subuh">04:40</span>
+            </div>
+            <div class="prayer-item">
+                <span class="prayer-name">Dzuhur</span>
+                <span class="prayer-time" id="dzuhur">12:00</span>
+            </div>
+            <div class="prayer-item">
+                <span class="prayer-name">Ashar</span>
+                <span class="prayer-time" id="ashar">15:15</span>
+            </div>
+            <div class="prayer-item">
+                <span class="prayer-name">Maghrib</span>
+                <span class="prayer-time" id="maghrib">18:05</span>
+            </div>
+            <div class="prayer-item">
+                <span class="prayer-name">Isya</span>
+                <span class="prayer-time" id="isya">19:20</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Greeting Message -->
+    <div class="greeting-message" onclick="showRandomGreeting()">
+        🌙 Klik untuk Ucapan Ramadhan!
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
